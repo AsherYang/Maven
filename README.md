@@ -9,7 +9,8 @@ An Android gradle use Maven local repository
 <p>而且写库文件的同事更新程序后，你也不必很苦恼的重新导他的库了或者重新编译他的库，这看你的引用方式咯。你只需要修改compile的
 中所带的版本号到他的版本号就可以了，是不是简单到粗暴？</p>
 
-** 我们完全可以做到这样！**
+**我们完全可以做到这样**
+
 <p>好，那下面就一起来实现这样的，看完本篇README和下载本工程代码，也许你就会了。</p>
 <p>当然，有些配置你得替换的，如果不知道，mailto me: ouyangfan1991@gmail.com <ouyangfan1991@gmail.com> </p>
 
@@ -20,6 +21,9 @@ An Android gradle use Maven local repository
    build.gradle以compile 'groupId:artifactId:version' 形式依赖；
 4. 虽然在本程序中，utillibrary是以Module的形式与app Module放在同一个工程下的，
 但是在app Module中并不是以compile project形式引入的，而是以说明3中的方式引入的。
+5. **重要说明**,如果你直接下载本程序是不能直接编译运行的！因为在工程build.gradle我使用的是我本地的maven仓库，
+ 如果你想要运行，那你只好打开jcenter了，并且将app/build.gradle中的引用utilLib给屏蔽掉。但这只是有利于你运行
+ 本程序并没有其他意义，真正的意义在于配置好了maven私服后替换掉该部分为你自己的私服地址。
 
 ### 环境搭建
 
