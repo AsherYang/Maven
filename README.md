@@ -11,7 +11,7 @@ An Android gradle use Maven local repository
 
 ** 我们完全可以做到这样！**
 <p>好，那下面就一起来实现这样的，看完本篇README和下载本工程代码，也许你就会了。</p>
-<p>当然，有些配置你得替换的，如果不知道，mailto me <ouyangfan1991@gmail.com></p>
+<p>当然，有些配置你得替换的，如果不知道，mailto me: ouyangfan1991@gmail.com <ouyangfan1991@gmail.com> </p>
 
 ## 工程说明：
 1. 该工程是一个在android studio的gradle中maven的测试工程；
