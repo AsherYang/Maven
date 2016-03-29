@@ -17,3 +17,11 @@ An Android gradle use Maven local repository
 ### 关于android studio 上传 maven 私服 
 上面搭建成功后，就可以使用android studio来管理了。
 具体的可以参照工程中common.gradle , user.properties 以及app/gradle.properties 中的配置
+配置注意点：
+
+1. common.gradle 中
++ 需要申明apply plugin: 'maven' 为maven 不然找不到mavenDeployer函数
++ user.properties 里面对应的 repository.url 必须与 pom.project 中申明的 version(在各个工程配置里的gradle.properties文件)匹配。release必须为release的url, snapshots 必须为 snapshots的url,所以两个文件中，这个地方需要匹配。不然传不上去。必须匹配，不能用Group 的url，因为Group的一般只配置view只读权限，只提供预览release和snapshots里面的库，并且可以提供下载(包括中央工程的代理)。
+
+2. maven 的 settings.xml 中
++ mirror、profile、activeProfile、server 的配置
