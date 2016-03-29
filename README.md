@@ -24,8 +24,8 @@ An Android gradle use Maven local repository
 ### 环境搭建
 
 1. maven私服使用Nexus oss管理，关于Nexus oss搭建请参照
-+ [建立企业内部Maven服务器并使用Android Studio发布公共项目](http://www.linuxidc.com/Linux/2015-06/118878.htm) 
-+  [nexus-2.12.0安装与部署](http://blog.csdn.net/yccn214/article/details/50527490)；
+   + [建立企业内部Maven服务器并使用Android Studio发布公共项目](http://www.linuxidc.com/Linux/2015-06/118878.htm)
+   + [nexus-2.12.0安装与部署](http://blog.csdn.net/yccn214/article/details/50527490)；
 2. 本工程在linux 环境下部署成功。
 
 ### android studio上传maven私服
