@@ -12,6 +12,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        // UserUtil 是通过compile方式引用maven私服中的utilLib库
         Toast.makeText(MainActivity.this, UserUtil.getUserName(), Toast.LENGTH_SHORT).show();
     }
 }
