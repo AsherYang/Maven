@@ -9,7 +9,7 @@ An Android gradle use Maven local repository
 <p>而且写库文件的同事更新程序后，你也不必很苦恼的重新导他的库了或者重新编译他的库，这看你的引用方式咯。你只需要修改compile的
 中所带的版本号到他的版本号就可以了，是不是简单到粗暴？</p>
 
-**我们完全可以做到这样**
+**我们完全可以做到这样！**
 
 <p>好，那下面就一起来实现这样的，看完本篇README和下载本工程代码，也许你就会了。</p>
 <p>当然，有些配置你得替换的，如果不知道，mailto me: ouyangfan1991@gmail.com <ouyangfan1991@gmail.com> </p>
