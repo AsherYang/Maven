@@ -2,7 +2,9 @@
 
 buildscript {
     repositories {
-        jcenter()
+//        jcenter()
+        mavenLocal()
+        maven { url "http://127.0.0.1:8081/nexus/content/groups/android_public/"}
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:1.5.0'
@@ -14,7 +16,9 @@ buildscript {
 
 allprojects {
     repositories {
-        jcenter()
+//        jcenter()
+        mavenLocal()
+        maven { url "http://127.0.0.1:8081/nexus/content/groups/android_public/"}
     }
 }
 

@@ -5,7 +5,7 @@ An Android gradle use Maven local repository
 1. 该工程是一个在android studio的gradle中maven的测试工程
 2. 主要是为了测试maven企业私服环境是否搭建成功
 3. 测试android studio 使用本地私服上传下载maven控件
-   build.gradle 中 compile 'groupId:artifactId-version' 形式
+   build.gradle 中 compile 'groupId:artifactId:version' 形式
 
 ### 环境搭建
 
