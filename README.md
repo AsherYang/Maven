@@ -54,7 +54,7 @@ An Android gradle use Maven local repository
 ### android studio 引用 maven 私服中的库
 
 1. 工程路径下的build.gradle中
-将jcenter()仓库地址换成本地mavenLocal()和私服maven { url "http://你企业服务器地址:8081/nexus/content/groups/android_public/"} 仓库
+将jcenter()仓库地址换成本地mavenLocal()和私服maven { url "http://你私服地址:8081/nexus/content/groups/android_public/"} 仓库
 
 2. 在app/build.gradle中
 引用你刚刚发布到私服中的库，compile 'com.xtc.ouyangfan:utilLib:0.0.1',
