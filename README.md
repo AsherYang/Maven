@@ -50,6 +50,7 @@ An Android gradle use Maven local repository
 2. 发布到私服
 我们在common.gradle已经配置上传task了，接下来就在需要上传的库工程utillibrary的build.gradle中apply from 引用。
 然后我们就可以通过gradle uploadArchives 来将库上传私服了。
+    + 注意如果是SNAPSHOT版本， gradle.properties中POM_VERSION一定要加上全大写SNAPSHOT, 如：POM_VERSION=0.0.1-SNAPSHOT
 
 ### android studio 引用 maven 私服中的库
 
