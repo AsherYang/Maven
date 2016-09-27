@@ -2,7 +2,7 @@
 An Android gradle use Maven local repository
 
 ## android studio 使用本地maven私服优势所在
-<p>好了，下面说中文。</p>
+
 <p>是不是觉得android studio 中gradle 的引用方式 compile 'xxx' 很方便的样子？</p>
 <p>在企业中，各个不同的人写不同的模块，有写库的，有写公共JAR的，有写业务逻辑的，写业务逻辑的可能就需要
 使用公司其他同事维护的库了，这时要是我们能以compile 'xxx' 方式引入岂不是很爽？</p>
